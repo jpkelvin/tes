@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prince Dental Care</title>
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/clinics.css">
+  <script src="scripts/headerfooter.js"></script>
+</head>
+
+<body>
+  <my-header></my-header>
+
+<!----=================================================
+            Body Section starts 
+====================================================-->
+
+
+<div class="clinics">
+    <h1 class="clinics-h1">Our Branches</h1>
+    <div class="clinics-row">
+      <div class="clinics-col">
+        <div class="clinics-col-each">
+          <img src="images/clinics/princedentalcare_sarjapur.jpg" class="clinic-img">
+          <div class="clinic-name"> Prince Dental Care - <span> Sarjapur Bengaluru </span></div>
+          <div class="clinic">
+            <span>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </span>
+            <p>(Based on 60 reviews)</p>
+          </div>
+          <p class="clinic-address"> <i class="bi bi-geo-alt-fill"></i> 
+            1st floor Rama Reddy Building, Sarjapur circle, 
+            Next to Canara Bank
+            Bengaluru, Karnataka 562125
+          </p>
+          <div class="clinic-btn-container">
+            <div class="clinic-btn"> <a href="bookappointment.html">
+                <button class="clinic-bookapp"><img class="clinic-btn-icon"
+                    src="{{ url_for('static',filename = 'images/bookapp_icon.png' )}}">Book Appointment</button></a>
+            </div>
+            <div class="clinic-btn">
+              <a href=" {{clinic['MapLink']}} " target="_blank">
+                <button class="clinic-getdir"><i class="bi bi-geo-alt-fill"></i> Get directions</button></a>
+            </div>
+          </div>
+          <p class="clinic-timings">Timing: 10:00am to 8:30pm</p>
+        </div>
+      </div>
+      <div class="clinics-col">
+        <div class="clinics-col-each">
+          <img src="images/clinics/image.png" class="clinic-img">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!----==============================================
+            Body section ends 
+====================================================-->
+
+  <my-footer></my-footer>
+  <my-chat></my-chat>
+
+</body>
+
+<!-- Importing scripts starts-->
+<script src="scripts/header.js"></script>
+<script src="scripts/base.js"></script>
+<!-- Importing scripts ends -->
+
+</html>

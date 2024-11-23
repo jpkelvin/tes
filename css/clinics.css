@@ -1,0 +1,166 @@
+/* =============================
+        Clinics Page
+===============================*/
+.clinics {
+    justify-content: center;
+    /* background-color: rgb(241, 240, 246); */
+}
+
+/* Our branches heading */
+.clinics-h1 {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-size: 5rem;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+/* Clinics display grid */
+.clinics-row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* Clinics cards */
+.clinics-col {
+    padding: 2%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(223, 8, 8, 0.2);
+    max-width: 35%;
+}
+
+
+.clinics-col:hover {
+    color: blue;
+    transform: translateZ(20px);
+    box-shadow: 0 12px 24px rgba(16, 5, 219, 0.4);
+}
+
+
+/* Clinics single card */
+.clinics-col-each {
+    /* padding: 2%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin: 2%;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.clinics-col-each .clinic-img {
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.clinics-col-each .clinic-name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.clinics-col-each .clinic-name span{
+    color: rgb(244, 229, 20);
+}
+
+.clinics-col-each .clinic-rating {
+    display: flex;
+}
+
+.clinics-col-each .clinic-rating p {
+    padding-left: 5px;
+}
+
+.clinics-col-each .clinic-address {
+    font-size: 16px;
+    text-align: justify;
+    /* align-self: center; */
+}
+
+.clinics-col-each .clinic-timings {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: justify;
+    /* align-self: center; */
+}
+
+.clinic-btn-container {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.clinic-btn button {
+    background-color: #0635f5;
+    color: yellow;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    padding: 8px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.clinic-btn button:hover {
+    cursor: pointer;
+    background-color: rgb(228, 88, 13);
+    transform: scale(1.2);
+}
+
+.clinic-btn-icon {
+    width: 1.2rem;
+}
+
+
+
+/* =====================================================
+            Responsive Design Codes
+======================================================*/
+
+
+@media (max-width: 1140px) {
+
+    .clinic-btn button {
+        font-size: 1.1rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    /* Clinics cards */
+    .clinics-col {
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    /* Clinics cards */
+    .clinics-col {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    .clinics h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .clinics h1 {
+        font-size: 3rem;
+    }
+
+    .clinics-col .clinic-img {
+        width: 100%
+    }
+}
